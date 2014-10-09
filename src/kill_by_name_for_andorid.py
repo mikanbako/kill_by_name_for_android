@@ -64,8 +64,6 @@ def get_pid_list(process_name_list):
 
 
 def run_kill(pid_list):
-    print('adb shell kill -9 ' + ' '.join(pid_list))
-
     if not pid_list:
         return
 
