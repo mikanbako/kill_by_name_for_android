@@ -49,6 +49,8 @@ def get_pid_list(process_name_list):
         if is_header:
             is_header = False
             continue
+        if not process:
+            continue
 
         match = PROCESS_NAME_PATTERN.match(process)
 
